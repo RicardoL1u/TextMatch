@@ -15,7 +15,7 @@ def get_index_of_all_matching(element,temp:list)->list:
             ret.append(idx)
     return ret
 
-# 
+# the output dataset
 dataset = []
 
 
@@ -38,9 +38,6 @@ for data in pre_dataset:
         last_sep = this_sep
 
     dataset.append(processed_data)
-
-
-# print(dataset[0])
 
 with open('data/processed.json','w') as f:
     json.dump(dataset,f)
